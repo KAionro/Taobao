@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淘宝网-淘！我喜欢</title>
+	<link rel="stylesheet" href="../css/common/common.css" >
+	<link rel="stylesheet" href="../css/common/base.css">
+	<link rel="stylesheet" href="../css/index.css" >
+	<link rel="stylesheet" href="../css/common/iconfont.css">
+	<script src="../libs/jquery-1.12.3.js"></script>
+	<script src="../js/index.js"></script>
+	<script src="../js/common/common.js"></script>
+</head>
+<body>
+<!--head start-->
+	<div class="head">
+		<div class="layout">
+		<!--登录注册-->
+			<div class="head_left line_h34">
+				<div class="head_login">
+					<a href="login.html" class="log_a">亲，请登录</a>
+					<a href="register.html" class="reg_a c6c">免费注册</a>
+				</div>
+				<div class="head_phone">
+					<a href="" class="phone_a c6c">手机逛淘宝</a>
+				</div>
+			</div>
+		<!--头部导航栏-->
+			<div class="head_nav">
+				<ul>
+					<li class="head_subnav">
+						<div class="head_nav_cont">
+						<a href="javascript:">
+						我的淘宝</a><span class="iconfont">&#xe608;</span>
+						</div>
+						<ul>
+							<li><a href="javascript:">已买到的宝贝</a></li>
+							<li><a href="javascript:">我的足迹</a></li>
+						</ul>
+					</li>
+					<li class="head_subnav">
+						<div class="head_nav_cont">
+							<span class="iconfont head_cart">&#xe602;</span>
+							<a href="javascript:">购物车</a>
+							<strong>0</strong>
+							<span class="iconfont">&#xe608;</span>
+						</div>
+					</li>
+					<li class="head_subnav">
+						<div class="head_nav_cont">
+							<span class="iconfont head_star">&#xe604;</span>
+							<a href="javascript:">收藏夹</a>
+							<span class="iconfont">&#xe608;</span>
+						</div>
+						<ul>
+							<li><a href="javascript:">收藏的宝贝</a></li>
+							<li><a href="javascript:">收藏的店铺</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="head_nav_cont">
+							<a href="javascript:">商品分类</a>
+						</div>
+					</li>
+					<li class="cd">
+						<div class="head_nav_cont">|</div>
+					</li>
+					<li class="head_subnav">
+						<div class="head_nav_cont">
+							<a href="javascript:">卖家中心</a>
+							<span class="iconfont">&#xe608;</span>
+						</div>
+						<ul>
+							<li><a href="javascipt:">免费开店</a></li>
+							<li><a href="javascipt:">已卖出的宝贝</a></li>
+							<li><a href="javascipt:">出售中的宝贝</a></li>
+							<li><a href="javascipt:">卖家服务市场</a></li>
+							<li><a href="javascipt:">卖家培训中心</a></li>
+						</ul>
+					</li>
+					<li class="head_subnav">
+						<div class="head_nav_cont">
+							<a href="javascript:">联系客服</a>
+							<span class="iconfont">&#xe608;</span>
+						</div>
+						<ul>
+							<li><a href="javascript:">消费者客服</a></li>
+							<li><a href="javascript:">卖家客服</a></li>
+						</ul>
+					</li>
+					<li class="head_subnav">
+						<div class="head_nav_cont">
+							<span class="iconfont head_more">&#xe615;</span>
+							<a href="javascript:">网站导航</a>
+							<span class="iconfont">&#xe608;</span>
+						</div>
+						<div class="webNav">
+							<div>
+							<ul class="webNav_fi">
+								<h4><a href="javascript:">主体市场</a></h4>
+									<li><a href="javascript:">女装<i></i></a></li>
+									<li><a href="javascript:">男装</a></li>
+									<li><a href="javascript:">内衣</a></li>
+									<li><a href="javascript:">鞋靴</a></li>
+									<li><a href="javascript:">箱包</a></li>
+									<li><a href="javascript:">婴童</a></li>
+									<li><a href="javascript:">家电<b></b></a></li>
+									<li><a href="javascript:">数码</a></li>
+									<li><a href="javascript:">手机</a></li>
+									<li><a href="javascript:">美妆</a></li>
+									<li><a href="javascript:">珠宝</a></li>
+									<li><a href="javascript:">眼镜</a></li>
+									<li><a href="javascript:">手表</a></li>
+									<li><a href="javascript:">运动</a></li>
+									<li><a href="javascript:">户外</a></li>
+									<li><a href="javascript:">乐器</a></li>
+									<li><a href="javascript:">游戏</a></li>
+									<li><a href="javascript:">动漫</a></li>
+									<li><a href="javascript:">影视</a></li>
+									<li><a href="javascript:">美食</a></li>
+									<li><a href="javascript:">鲜花</a></li>
+									<li><a href="javascript:">宠物</a></li>
+									<li><a href="javascript:">农资</a></li>
+									<li><a href="javascript:">房产</a></li>
+									<li><a href="javascript:">装修</a></li>
+									<li><a href="javascript:">建材</a></li>
+									<li><a href="javascript:">家居<i></i></a></li>
+									<li><a href="javascript:">百货</a></li>
+									<li><a href="javascript:">汽车</a></li>
+									<li><a href="javascript:">二手车</a></li>
+									<li><a href="javascript:">办公</a></li>
+									<li><a href="javascript:">五金</a></li>
+									<li><a href="javascript:">定制</a></li>
+									<li><a href="javascript:">教育</a></li>
+									<li><a href="javascript:">卡券</a></li>
+									<li><a href="javascript:">本地</a></li>
+									<li><a href="javascript:">手表</a></li>
+									<li><a href="javascript:">手表</a></li>
+									<li><a href="javascript:">手表</a></li>
+									<li><a href="javascript:">手表</a></li>
+							</ul>
+							</div>
+							<div>
+							<ul class="webNav_se">
+								<h4><a href="javascript:">特色市场</a></h4>
+									<li><a href="javascript:">iFashion<b></b></a></li>
+									<li><a href="javascript:">爱逛街</a></li>
+									<li><a href="javascript:">美妆秀</a></li>
+									<li><a href="javascript:">全球购<i></i></a></li>
+									<li><a href="javascript:">腔调</a></li>
+									<li><a href="javascript:">淘女郎</a></li>
+									<li><a href="javascript:">星店</a></li>
+									<li><a href="javascript:">汇吃</a></li>
+									<li><a href="javascript:">格调</a></li>
+									<li><a href="javascript:">运动派</a></li>
+									<li><a href="javascript:">极有家<i></i></a></li>
+									<li><a href="javascript:">特色中国</a></li>
+									<li><a href="javascript:">潮电街</a></li>
+									<li><a href="javascript:">拍卖会</a></li>
+									<li><a href="javascript:">淘宝众筹</a></li>
+									<li><a href="javascript:">中国质造</a></li>
+									<li><a href="javascript:">质+</a></li>
+									<li><a href="javascript:">阿里旅行</a></li>
+									<li><a href="javascript:">亲宝贝<b></b></a></li>
+									<li><a href="javascript:">闲鱼</a></li>
+									<li><a href="javascript:">桃花源</a></li>
+									<li><a href="javascript:">农资</a></li>
+									<li><a href="javascript:">天天特价<i></i></a></li>
+									<li><a href="javascript:">清仓</a></li>
+									<li><a href="javascript:">俪人购</a></li>
+									<li><a href="javascript:">聚名品</a></li>
+									<li><a href="javascript:">淘抢购</a></li>
+									<li><a href="javascript:">生活汇</a></li>
+									<li><a href="javascript:">全球精选</a></li>
+									<li><a href="javascript:">非常大牌</a></li>
+									<li><a href="javascript:">试用</a></li>
+									<li><a href="javascript:">量贩团</a></li>
+							</ul>
+							</div>
+							<div>
+							<ul class="webNav_th">
+								<h4><a href="javascript:">阿里APP</a></h4>
+									<li><a href="javascript:">淘宝<i></i></a></li>
+									<li><a href="javascript:">天猫</a></li>
+									<li><a href="javascript:">支付宝</a></li>
+									<li><a href="javascript:">聚划算</a></li>
+									<li><a href="javascript:">去啊</a></li>
+									<li><a href="javascript:">蚂蚁聚宝<b></b></a></li>
+									<li><a href="javascript:">旺信</a></li>
+									<li><a href="javascript:">闲鱼<i></i></a></li>
+									<li><a href="javascript:">阿里钱盾</a></li>
+									<li><a href="javascript:">钉钉<i></i></a></li>
+									<li><a href="javascript:">高德地图</a></li>
+									<li><a href="javascript:">点点虫</a></li>
+									<li><a href="javascript:">虾米音乐</a></li>
+									<li><a href="javascript:">淘宝电影</a></li>
+									<li><a href="javascript:">菜鸟裹裹<b></b></a></li>
+									<li><a href="javascript:">爱逛街</a></li>
+									<li><a href="javascript:">拍卖会</a></li>
+									<li><a href="javascript:">阿里云</a></li>
+									<li><a href="javascript:">网商银行</a></li>
+									<li><a href="javascript:">阿里邮箱<b></b></a></li>
+							</ul>
+							</div>
+							<div>
+							<ul class="webNav_fo">
+								<h4><a href="javascript:">精彩推荐集</a></h4>
+									<li><a href="javascript:">余额宝<i></i></a></li>
+									<li><a href="javascript:">大牌捡宝</a></li>
+									<li><a href="javascript:">淘公仔</a></li>
+									<li><a href="javascript:">浏览器</a></li>
+									<li><a href="javascript:">淘宝香港</a></li>
+									<li><a href="javascript:">淘宝台湾</a></li>
+									<li><a href="javascript:">淘宝全球</a></li>
+									<li><a href="javascript:">淘宝东南亚</a></li>
+									<li><a href="javascript:">闺蜜淘货</a></li>
+									<li><a href="javascript:">淘宝视频</a></li>
+									<li><a href="javascript:">大众评审</a></li>
+									<li><a href="javascript:">淘工作<b></b></a></li>
+							</ul>
+							</div>
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+<!--head over-->
+
+<!--banner start-->
+<div class="banner">
+	<!--logo/search/二维码-->
+	<div class="ba_top">
+	<!-- 搜索框 -->
+		<div class="layout">
+			<div class="ba_se">
+				<div class="ba_se_co">
+					<div class="ba_se_co_r">
+						<a href="javascript:">
+							高级<br />搜索
+						</a>
+					</div>
+					<div class="ba_se_l">
+					<!-- 搜索关键字 -->
+						<div class="ba_se_l_top">
+							<ul>
+								<li class="ba_se_enter">宝贝</li>
+								<li>天猫</li>
+								<li>店铺</li>
+							</ul>
+						</div>
+					<!-- 搜索框 -->
+						<div>
+							<form action="">
+								<div class="se_btn">
+									<button>搜索</button>
+								</div>
+								<div class="se_text">
+									<div class="se_text_ff">
+										<div class="se_text_in">
+											<input type="text" placeholder="请输入搜索内容">
+										</div>
+										<div class="se_camera">
+											<span></span>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- logo -->
+			<div class="logo">
+				<div>
+					<a href="index.html"></a>
+				</div>
+			</div>
+		<!--2weima-->
+			<div class="ba_ewm">
+				<div class="ba_ewm_box">
+					<div class="ba_ewm_close">
+						<a href="javascript:" class="iconfont">&#xe603;</a>
+					</div>
+					<div class="ba_ewm_img">
+						<span>手机淘宝</span>
+						<img src="../img/index/2weima.png" alt="2weima">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!--banner content-->
+	<div class="ba_cont">
+		<div class="layout">
+			<div class="ba_nav">
+				<div class="ba_nav_b">
+					<div class="ba_nav_main">
+						<ul class="ba_nav_l">
+							<li><a href="javascript:">天猫</a></li>
+							<li><a href="javascript:">聚划算</a></li>
+							<li><a href="javascript:">天猫超市</a></li>
+						</ul>
+						<ul class="ba_nav_r">
+							<li class="ba_nav_mid">|</li>
+							<li><a href="javascript:">淘抢购</a></li>
+							<li><a href="javascript:">电器城</a></li>
+							<li><a href="javascript:">司法拍卖</a></li>
+							<li><a href="javascript:">中国质造</a></li>
+							<li><a href="javascript:">特色中国</a></li>
+						</ul>
+						<ul class="ba_nav_r">
+							<li class="ba_nav_mid">|</li>
+							<li><a href="javascript:">阿里旅行</a></li>
+							<li><a href="javascript:">智能生活</a></li>
+							<li><a href="javascript:">苏宁易购</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--banner_navBottom_content-->
+				<div class="ba_bo_co">
+					<!-- 导航条下部分中间广告 -->
+					<div class="ba_mid_box">
+						<div>
+							<div class="ba_mid_top">
+								<a href="javascript:">
+									<img src="../img/index/banner_mid_top.jpg" alt="banner_mid_top">
+								</a>
+							</div>
+							<div class="ba_mid_bo">
+								<h5>今日热卖</h5>
+								<a href="javascript:">
+									<img src="../img/index/banner_mid_down.jpg" alt="banner_mid_top">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--nav下部分 banner_left_box / banner_lunbo-->
+					<div class="ba_le_box">
+						<div class="ba_lb_top">
+							<div class="ba_lb_tBox">
+								<div class="ba_lb_tMain">
+									<ul>
+										<li>
+											<a href="javascript:"><img src="../img/index/banner_lunbo_top1.jpg" alt=""></a>
+										</li>
+										<li>
+											<a href="javascript:"><img src="../img/index/banner_lunbo_top2.jpg" alt=""></a>
+										</li>
+										<li>
+											<a href="javascript:"><img src="../img/index/banner_lunbo_top3.jpg" alt=""></a>
+										</li>
+										<li>
+											<a href="javascript:"><img src="../img/index/banner_lunbo_top4.jpg" alt=""></a>
+										</li>
+										<li>
+											<a href="javascript:"><img src="../img/index/banner_lunbo_top5.jpg" alt=""></a>
+										</li>
+									</ul>
+								</div>
+								<div class="ba_lb_tTip">
+									<div class="ba_lb_tArrow">
+										<a href="javascript:" class="lt">&lt;</a>
+										<a href="javascript:" class="gt">&gt;</a>
+									</div>
+									<ul>
+										<li><a href="javascript:" class="ba_lb_on"></a></li>
+										<li><a href="javascript:"></a></li>
+										<li><a href="javascript:"></a></li>
+										<li><a href="javascript:"></a></li>
+										<li><a href="javascript:"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- banner_bottom_lunbo -->
+						<div class="ba_lb_bo">
+							<div class="ba_lb_box">
+								<div class="ba_tamll">
+									<span>天猫必逛</span>
+									<i>热门品牌,天天上天猫!</i>
+									<strong>
+										<b>1</b>/6
+									</strong>
+								</div>
+								<div class="ba_lb_bBox">
+									<div class="ba_lb_bMain">
+										<ul>
+											<li>
+												<div>
+												<a href="javascript:" class="ba_lb_first"><img src="../img/index/banner_lunbo_down_1_1.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_1_2.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_1_3.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_1_4.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_1_5.jpg" alt=""></a>
+												</div>
+											</li>
+											<li>
+												<div>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_2_1.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_2_2.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_2_3.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_2_4.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_2_5.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_2_6.jpg" alt=""></a>
+												</div>
+											</li>
+											<li>
+												<div>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_3_1.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_3_2.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_3_3.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_3_4.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_3_5.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_3_6.jpg" alt=""></a>
+												</div>
+											</li>
+											<li>
+												<div>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_4_1.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_4_2.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_4_3.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_4_4.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_4_5.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_4_6.jpg" alt=""></a>
+												</div>
+											</li>
+											<li>
+												<div class="ba_lb_bLogo">
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_1.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_2.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_3.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_4.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_5.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_6.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_7.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_8.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_9.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_10.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_11.jpg" alt=""></a>
+												<a href="javascript:"><img src="../img/index/banner_lunbo_down_5_12.jpg" alt=""></a>
+												</div>
+											</li>
+											<li>
+												<div>
+												<a href="javascript:" class="ba_lb_bo_l"><img src="../img/index/banner_lunbo_down_6_1.jpg" alt=""></a>
+												<a href="javascript:" class="ba_lb_bo_r"><img src="../img/index/banner_lunbo_down_6_2.jpg" alt=""></a>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="ba_lb_bTip">
+										<div class="ba_lb_bArrow">
+											<a href="javascript:" class="lt">&lt;</a>
+											<a href="javascript:" class="gt">&gt;</a>
+										</div>
+										<ul>
+											<li><a href="javascript:" class="ba_lb_on"></a></li>
+											<li><a href="javascript:"></a></li>
+											<li><a href="javascript:"></a></li>
+											<li><a href="javascript:"></a></li>
+											<li><a href="javascript:"></a></li>
+											<li><a href="javascript:"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--nav下部分右边-->
+					<div class="ba_ri_box">
+						<div class="ba_login">
+							<div class="ba_lo_box">
+								<div class="ba_lo_lo">
+									<a href="javascript:"><img src="../img/index/wangwang.jpg" alt=""></a>
+									<span>
+										Hi!
+										<b>你好</b>
+									</span>
+									<p>
+										<b></b>
+										<a href="javascript:">领淘金币抵钱</a>
+										<span>或去</span>
+										<a href="javascript:">会员俱乐部</a>
+									</p>
+								</div>
+								<div class="ba_lo_in">
+									<div>
+										<a href="javascript:" class="ba_lo_first">登录</a>
+										<a href="javascript:">注册</a>
+										<a href="javascript:">开店</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- banner_news -->
+						<div class="ba_news">
+							<div class="ba_news_box">
+								<div class="ba_news_tip">
+									<ul>
+										<li class="ba_news_on"><a href="javascript:">公告</a></li>
+										<li><a href="javascript:">规则</a></li>
+										<li><a href="javascript:">论坛</a></li>
+										<li><a href="javascript:">安全</a></li>
+										<li><a href="javascript:">公益</a></li>
+									</ul>
+								</div>
+								<div class="ba_news_main">
+									<div class="ba_nMain_on">
+										<ul>
+											<li><a href="javascript:" class="cf40">天猫联手浙江卫视打造2016年双11“春晚”</a></li>
+											<li><a href="javascript:">淘宝新规严惩恶意骚扰</a></li>
+											<li><a href="javascript:">阿里安全峰会在京召开</a></li>
+										</ul>
+									</div>
+									<div>
+										<ul>
+											<li><a href="javascript:">淘宝争议处理规则变更</a></li>
+											<li><a href="javascript:">微淘平台管理规范变更</a></li>
+											<li><a href="javascript:">开店认证假货规则变更</a></li>
+											<li><a href="javascript:">恶意骚扰新增违规情形</a></li>
+										</ul>
+									</div>
+									<div>
+										<ul>
+											<li><a href="javascript:">淘宝招募卖家志愿者</a></li>
+											<li><a href="javascript:">淘宝招募卖家志愿者</a></li>
+											<li><a href="javascript:">700家热风淘宝路</a></li>
+											<li><a href="javascript:">是赚钱还是骗子</a></li>
+										</ul>
+									</div>
+									<div>
+										<ul>
+											<li><a href="javascript:">百万假卸妆水案破获</a></li>
+											<li><a href="javascript:">朋友圈卖假货被抓</a></li>
+											<li><a href="javascript:">电子证据成炒信“照妖镜” 警惕：假客服组团来袭</a></li>
+										</ul>
+									</div>
+									<div>
+										<ul>
+											<li><a href="javascript:">阿里捐赠700万元救灾</a></li>
+											<li><a href="javascript:">阿里推出兼职神器</a></li>
+											<li><a href="javascript:">700家热风淘宝路</a></li>
+											<li><a href="javascript:">是赚钱还是骗子</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- 各种服务 -->
+						<div class="ba_serve">
+							<div class="ba_se_box">
+								<ul>
+									<li class="ba_seLi_1"><a href="javascript:">
+											<span></span>
+											<p>充话费</p>
+										</a></li>
+									<li class="ba_seLi_2"><a href="javascript:">
+											<span></span>
+											<p>游戏</p>
+										</a></li>
+									<li class="ba_seLi_3"><a href="javascript:">
+											<span></span>
+											<p>旅行</p>
+										</a></li>
+									<li class="ba_seLi_4"><a href="javascript:">
+											<span></span>
+											<p>保险</p>
+										</a></li>
+									<li class="ba_seLi_5"><a href="javascript:">
+											<span></span>
+											<p>彩票</p>
+										</a></li>
+									<li class="ba_seLi_6"><a href="javascript:">
+											<span></span>
+											<p>电影</p>
+										</a></li>
+									<li class="ba_seLi_7"><a href="javascript:">
+											<span></span>
+											<p>点外卖</p>
+										</a></li>
+									<li class="ba_seLi_8"><a href="javascript:">
+											<span></span>
+											<p>理财</p>
+										</a></li>
+									<li class="ba_seLi_9"><a href="javascript:">
+											<span></span>
+											<p>找服务</p>
+										</a></li>
+									<li class="ba_seLi_10"><a href="javascript:">
+											<span></span>
+											<p>音乐</p>
+										</a></li>
+									<li class="ba_seLi_11"><a href="javascript:">
+											<span></span>
+											<p>水电煤</p>
+										</a></li>
+									<li class="ba_seLi_12"><a href="javascript:">
+											<span></span>
+											<p>火车票</p>
+										</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- banner左边的导航栏 -->
+			<div class="ba_left">
+				<div class="ba_model">
+					<div class="ba_mo_box">
+						<div class="ba_mo_hd">
+							<a href="javascript:">
+								<h3>主题市场</h3>
+								<i class="iconfont">&#xe619;</i>
+							</a>
+						</div>
+						<ul>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe61a;</i>
+								<span>
+									<a href="javascript:">女装</a> /
+									<a href="javascript:">男装</a> /
+									<a href="javascript:">内衣</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe60c;</i>
+								<span>
+									<a href="javascript:">鞋靴</a> /
+									<a href="javascript:">箱包</a> /
+									<a href="javascript:">配件</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe610;</i>
+								<span>
+									<a href="javascript:">童装玩具</a> /
+									<a href="javascript:">孕婴</a> /
+									<a href="javascript:">用品</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe612;</i>
+								<span>
+									<a href="javascript:">家电</a> /
+									<a href="javascript:">数码</a> /
+									<a href="javascript:">手机<b></b></a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe601;</i>
+								<span>
+									<a href="javascript:">美妆</a> /
+									<a href="javascript:">洗护</a> /
+									<a href="javascript:">保健品</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe61b;</i>
+								<span>
+									<a href="javascript:">珠宝</a> /
+									<a href="javascript:">眼镜</a> /
+									<a href="javascript:">手表</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe609;</i>
+								<span>
+									<a href="javascript:">运动</a> /
+									<a href="javascript:">户外</a> /
+									<a href="javascript:">乐器</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe61c;</i>
+								<span>
+									<a href="javascript:">游戏</a> /
+									<a href="javascript:">动漫</a> /
+									<a href="javascript:">影视</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe60f;</i>
+								<span>
+									<a href="javascript:">美食</a> /
+									<a href="javascript:">生鲜</a> /
+									<a href="javascript:">零食<b></b></a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe613;</i>
+								<span>
+									<a href="javascript:">鲜花</a> /
+									<a href="javascript:">宠物</a> /
+									<a href="javascript:">农资</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe60e;</i>
+								<span>
+									<a href="javascript:">房产</a> /
+									<a href="javascript:">装修</a> /
+									<a href="javascript:">建材</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe600;</i>
+								<span>
+									<a href="javascript:">家居</a> /
+									<a href="javascript:">家饰</a> /
+									<a href="javascript:">家纺</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe61d;</i>
+								<span>
+									<a href="javascript:">汽车</a> /
+									<a href="javascript:">二手车</a> /
+									<a href="javascript:">用品</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe60b;</i>
+								<span>
+									<a href="javascript:">办公</a> /
+									<a href="javascript:">DIV</a> /
+									<a href="javascript:">五金电子</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe60d;</i>
+								<span>
+									<a href="javascript:">百货</a> /
+									<a href="javascript:">收纳</a> /
+									<a href="javascript:">家庭保健</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+							<li>
+								<i class="iconfont ba_ul_log">&#xe618;</i>
+								<span>
+									<a href="javascript:">学习</a> /
+									<a href="javascript:">卡券</a> /
+									<a href="javascript:">本地服务</a>
+								</span>
+								<i class="iconfont">&#xe617;</i>
+							</li>
+						</ul>
+						<!-- 广告 -->
+						<div class="ba_le_ad">
+							<a href="javascript:"><img src="../img/index/banner_left_ad.jpg" alt=""></a>
+						</div>
+					<!-- banner_secondNav -->
+						<div class="ba_seNav">
+						<!-- banner_seconeNav_clothes -->
+							<div class="ba_sN_cl">
+								<div class="ba_sN_l">
+									<div class="ba_sN_l_top">
+										<h5>
+											<a href="javascript:"><img src="../img/index/banner_secondNav_1.jpg" alt=""><b>	女装</b></a>
+											<a href="javascript:" ><span>更多<i class="iconfont">&#xe617;</i></span></a>
+										</h5>
+										<p>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+										</p>
+									</div>
+									<div class="ba_sN_l_middle">
+										<h5>
+											<a href="javascript:"><img src="../img/index/banner_secondNav_2.jpg" alt=""><b>	女装</b></a>
+											<a href="javascript:" ><span>更多<i class="iconfont">&#xe617;</i></span></a>
+										</h5>
+										<p>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+										</p>
+									</div>
+									<div class="ba_sN_l_bottom">
+										<h5>
+											<a href="javascript:"><img src="../img/index/banner_secondNav_3.jpg" alt=""><b>	女装</b></a>
+											<a href="javascript:" ><span>更多<i class="iconfont">&#xe617;</i></span></a>
+										</h5>
+										<p>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+											<a href="javascript:">韩版</a>
+										</p>
+									</div>
+								</div>
+								<div class="ba_sN_r">
+									<h3>
+										<i class="iconfont">&#xe607;</i><span>猜你喜欢</span>
+									</h3>
+									<div class="ba_sN_r_tip">实时推荐最适合你的宝贝</div>
+									<div class="ba_sN_r_list">
+										<a href="javascipt:"><img src="../img/index/banner_secondNav_right_1.png" alt=""><span>枪枪家 夏新品花色吊带连衣裙 修身显瘦低胸露背印花无袖包臀裙女</span></a>
+										<a href="javascipt:"><img src="../img/index/banner_secondNav_right_1.png" alt=""><span>枪枪家 夏新品花色吊带连衣裙 修身显瘦低胸露背印花无袖包臀裙女</span></a>
+										<a href="javascipt:"><img src="../img/index/banner_secondNav_right_1.png" alt=""><span>枪枪家 夏新品花色吊带连衣裙 修身显瘦低胸露背印花无袖包臀裙女</span></a>
+										<a href="javascipt:"><img src="../img/index/banner_secondNav_right_1.png" alt=""><span>枪枪家 夏新品花色吊带连衣裙 修身显瘦低胸露背印花无袖包臀裙女</span></a>
+										<a href="javascipt:"><img src="../img/index/banner_secondNav_right_1.png" alt=""><span>枪枪家 夏新品花色吊带连衣裙 修身显瘦低胸露背印花无袖包臀裙女</span></a>
+										<a href="javascipt:"><img src="../img/index/banner_secondNav_right_1.png" alt=""><span>枪枪家 夏新品花色吊带连衣裙 修身显瘦低胸露背印花无袖包臀裙女</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="ba_sN_foot">
+							</div>
+							<div class="ba_sN_play">
+							</div>
+							<div class="ba_sN_phone">
+							</div>
+							<div class="ba_sN_mei">
+							</div>
+							<div class="ba_sN_zhubao">
+							</div>
+							<div class="ba_sN_sport">
+							</div>
+							<div class="ba_sN_game">
+							</div>
+							<div class="ba_sN_eat">
+							</div>
+							<div class="ba_sN_flower">
+							</div>
+							<div class="ba_sN_house">
+							</div>
+							<div class="ba_sN_home">
+							</div>
+							<div class="ba_sN_car">
+							</div>
+							<div class="ba_sN_div">
+							</div>
+							<div class="ba_sN_more">
+							</div>
+							<div class="ba_sN_study">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!--banner over-->
+</body>
+</html>

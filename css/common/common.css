@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+body {background:#f1f1f1; overflow-x:hidden;}
+.layout {width:1190px; margin:0 auto;}
+a {color:#3c3c3c;}
+
+/*font-color*/
+.c6c {color:#6C6C6C;} .cd {color:#ddd;} .cf40 {color:#f40;}
+
+/*head*/
+.head {height:35px; border-bottom: 1px solid #eee;}
+	.head_left {width:213px; height:35px; float:left;}
+	.head_login {width:122px; height:35px; padding:0 6px; float:left;}
+	.head_login .log_a {color:#f22e00; margin-right:7px;}
+	.head_login .reg_a:hover ,.head_phone .phone_a:hover {color:red;}
+	.head_phone {width:67px; height:35px; padding:0 6px; float:left;}
+	/*头部导航条*/
+	.head_nav {width:auto; height:35px; float:right;}
+		.head_nav>ul>li {float:left;  position:relative;}
+		/*li下的第一个div*/
+		.head_nav .head_nav_cont {position:relative; left:0; top:0; border-right:1px solid #f1f1f1; border-left:1px solid #f1f1f1; line-height:34px; padding:0 6px; height:36px; z-index:101;}
+		.head_nav li a {color:#6C6C6C; margin-right:5px;}
+		.head_nav>ul>li:hover .head_nav_cont a ,.head_nav li:hover .head_star {color:red;}
+		.head_nav li span {width:12px; height:12px; position:relative; top:2px;}
+		/*cart logo*/
+		.head_nav li .head_cart {top:0; color:red; margin-right:3px;}
+		/*more logo*/
+		.head_nav li .head_more {color:red; margin-right:3px;}
+		/*star logo*/
+		.head_nav li .head_star {color:#6c6c6c; margin-right:3px; font-size:12px; top:0;}
+		.head_nav .head_subnav:hover .head_nav_cont {background:#fff; border-color:#eee;}
+		.head_nav .head_subnav:hover ul {display:block;}
+		.head_nav .head_subnav:hover .webNav {display:block;}
+		.head_subnav>ul {position:absolute; top:34px; left:0; background:#fff; display:none; padding:6px 0; border:1px #eee solid; z-index:100;}
+		.head_subnav>ul li {white-space:nowrap; padding:8px 6px;}
+		.head_subnav>ul li:hover {background:#f1f1f1;}
+		/*cart数量*/
+		.head_subnav strong {color:#f22e00; margin-left:-7px;}
+		/*网站导航隐藏的内容*/
+		.webNav {width:1188px; background:#fff; position:absolute; right:0; top:34px; border:1px #eee solid; min-height:258px; overflow:hidden; display:none; z-index:100;}
+		.webNav div {width:25%; float:left; overflow:hidden; }
+		.webNav div ul {border-right:1px #eee solid; overflow:hidden; padding:5px;}
+		.webNav .webNav_fo {border-right:none;}
+		.webNav ul h4 {width:100%; text-align:left; padding:5px; font-size:16px;}
+		.webNav ul li {float:left; padding-top:5px;}
+		.webNav ul li a {height:25px; line-height:25px; padding:0 8px; border-radius:2px; margin:0 2px; float:left; position:relative;}
+		/*webNav_fi webNav_se webNav_th webNav_fo分别为四列class*/
+		.webNav_fi h4 a {color:#fc4200;}
+		.webNav_se h4 a {color:#9fb838;}
+		.webNav_th h4 a {color:#d75696;}
+		.webNav_fo h4 a {color:#2e9fdb;}
+		.webNav .webNav_fi li {width:25%;}
+		.webNav .webNav_fi li:hover a{background:#fc4200; color:#fff;}
+		.webNav .webNav_se li {width:33%;}
+		.webNav .webNav_se li:hover a{background:#9fb838; color:#fff;}
+		.webNav .webNav_th li {width:33%;}
+		.webNav .webNav_th li:hover a{background:#d75696; color:#fff;}
+		.webNav .webNav_fo li {width:50%;}
+		.webNav .webNav_fo li:hover a{background:#2e9fdb; color:#fff;}
+		.webNav ul li a i {background:url(../../img/common/webNav_01.gif) no-repeat; position:absolute; top:-5px; right:0; width:9px; height:14px; display:block;}
+		.webNav ul li a b {background:url(../../img/common/webNav_02.gif) no-repeat; position:absolute; top:-5px; right:0; width:9px; height:14px; display:block;}
+
