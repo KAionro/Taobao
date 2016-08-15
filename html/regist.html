@@ -2,24 +2,123 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style/layout.css" >
-	<link rel="stylesheet" href="style/index.css" >
-	<script src="js/index.js"></script>
-	<script src="js/layout.js"></script>
-	<script src="js/jquery-1.12.3.js"></script>
+	<title>账户注册|淘宝网</title>
+	<link rel="stylesheet" href="../css/common/common.css" >
+	<link rel="stylesheet" href="../css/common/base.css">
+	<link rel="stylesheet" href="../css/regist.css" >
+	<link rel="stylesheet" href="../css/common/iconfont.css">
+	<script src="../libs/jquery-1.12.3.js"></script>
+	<script src="../libs/jquery.cookie.js"></script>
+	<script src="../js/regist.js"></script>
+	<script src="../js/common/common.js"></script>
 </head>
-<body>
+<body id="body">
 <!--head start-->
 	<div class="head">
-		<div class="layout">
-			<div class="head_login">
-				<a href="login.html">亲，请登录</a>
-				<a href="register.html">免费注册</a>
-				<a href="">手机逛淘宝</a>
-			</div>
-		</div>
+
 	</div>
 <!--head over-->
+
+<!-- register start -->
+<div class="register layout">
+	<div class="logo">
+		<div class="logo_box">
+			<a href="index.html"><img src="../img/common/logo.jpg" alt=""></a>
+		</div>
+		<div class="logo_text">用户注册</div>
+	</div>
+	<div class="tips">
+		<ul>
+			<li class="tips_now">
+				<i class="iconfont">&#xe627;</i>设置用户名
+			</li>
+			<li>
+				<i class="iconfont">&#58920;</i>填写账号信息
+			</li>
+			<li>
+				<i class="iconfont">&#58921;</i>设置支付方式
+			</li>
+			<li>
+				<i class="iconfont">&#58918;</i>注册成功
+			</li>
+		</ul>
+		<div>
+			<a href="javascript:">中文</a>|
+			<a href="javascript:">English</a>
+		</div>
+	</div>
+	<div class="message index">
+		<form action="" auction="post">
+			<div class="for_box">
+				<div>	
+					<span>手机号</span>
+					<div>
+						<select name="" id="" class="class_op">
+							<option value="">中国大陆 +86</option>
+						</select>
+						<input class="phone_num" type="text" placeholder="请输入你的手机号">
+						<strong class="result"><i class="iconfont"></i><b></b></strong>
+					</div>
+				</div>
+				<div>
+					<span>验证</span>
+					<div class="move">
+						<div class="move_bd"></div>
+						<div class="move_txt">请安住滑块，拖到最右边</div>
+						<span class="iconfont">&#xe617;</span>
+					</div>
+				</div>
+				<div>
+					<div class="submit">下一步</div>
+				</div>
+				<div>
+					<div class="change"><a href="javasript:">切换成企业账户注册</a></div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- 注册页面 -->
+
+		<div class="message user_pass">
+		<form action="" auction="post">
+			<div class="for_box">
+				<div>	
+					<span>用户名</span>
+					<div>
+						<input class="phone_num user" type="text" placeholder="请输入你要注册的用户名">
+						<strong class="result"><i class="iconfont"></i><b></b></strong>
+					</div>
+				</div>
+				<div>	
+					<span>密码</span>
+					<div>
+						<input class="phone_num password" type="password" placeholder="请输入密码">
+						<strong class="result"><i class="iconfont"></i><b></b></strong>
+					</div>
+				</div>
+				<div>
+					<div class="submit goto">提交</div>
+				</div>
+				<div>
+					<div class="change"><a href="javasript:">淘宝用户注册协议</a></div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</div>
+<!-- register over -->
+
+<!-- 注册改进建议 -->
+<div class="advice layout">
+	<img src="../img/regist/advice.png" alt="">
+	<a href="javascript:">"淘宝注册"改进建议</a>
+</div>
+
+<!-- footer start-->
+<div class="footer layout">
+
+</div>
+<!-- footer over -->
 </body>
 </html>

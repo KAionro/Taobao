@@ -2,24 +2,234 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style/layout.css" >
-	<link rel="stylesheet" href="style/index.css" >
-	<script src="js/index.js"></script>
-	<script src="js/layout.js"></script>
-	<script src="js/jquery-1.12.3.js"></script>
+	<title>淘宝网-淘我喜欢！</title>
+	<link rel="stylesheet" href="../css/common/common.css" >
+	<link rel="stylesheet" href="../css/common/base.css">
+	<link rel="stylesheet" href="../css/pay.css" >
+	<link rel="stylesheet" href="../css/common/iconfont.css">
+	<script src="../libs/jquery-1.12.3.js"></script>
+	<script src="../libs/jquery.cookie.js"></script>
+	<script src="../js/pay.js"></script>
+	<script src="../js/common/common.js"></script>
 </head>
 <body>
 <!--head start-->
-	<div class="head">
-		<div class="layout">
-			<div class="head_login">
-				<a href="login.html">亲，请登录</a>
-				<a href="register.html">免费注册</a>
-				<a href="">手机逛淘宝</a>
+	<div class="header">
+	</div>
+<!--head over-->
+
+<!-- content start -->
+<div class="content">
+	<div class="buy_cont">
+		<div class="buy_logo">
+			<h1><a href="index.html"></a></h1>
+			<ul>
+				<li class="logo_li_first"><span>查看购物车</span></li>
+				<li><span>拍下商品</span></li>
+				<li><span>付款到支付宝</span></li>
+				<li><span>确认收货</span></li>
+				<li class="logo_li_last"><span>评价</span></li>
+			</ul>
+		</div>
+		<div class="bay_add">
+			<h3>确认收货地址
+			<span>管理收货地址</span></h3>
+			<ul>
+				<li class="add_li_first">
+	                <i class="iconfont">&#xe63a;</i>
+	                <span>寄送至</span>
+	                <div class="address_info">
+	                    <a href="javascript:void(0);">修改本地址</a>
+	                    <input name="address" type="radio" id="add_1" checked="checked">
+	                    <label for="addrId_6405246814" class="add_1">
+	                          上海 上海市 宝山区 吴淞街道
+	                          同济支路199号(你张大爷 收) <em>110120119911</em>
+	                    </label>
+	                    <em class="tip ">默认地址</em>
+	                </div>
+           		</li>
+           		<li>
+	                <i class="iconfont">&#xe63a;</i>
+	                <span>寄送至</span>
+	                <div class="address_info">
+	                    <a href="javascript:void(0);">修改本地址</a>
+	                    <input name="address" type="radio" id="add_1">
+	                    <label for="addrId_6405246814" class="add_1">
+	                          上海 上海市 宝山区 吴淞街道
+	                          同济支路199号(你张大爷 收) 
+	                          <em>110120119911</em>
+	                    </label>
+	                    <em class="tip ">默认地址</em>
+	                </div>
+           		</li>
+			</ul>
+			<div class="other_add"><a href="javascript:">使用其他地址</a></div>
+		</div>
+		<!-- 菜鸟驿站 -->
+		<div class="buy_subadd">
+			<div class="buy_subadd_box">
+				<div class="subadd_top">
+					<span>菜鸟驿站免费代收服务
+						<a href="javascript:">[?]</a>
+						<em></em>
+					</span>
+				</div>
+				<div class="subadd_bottom">
+					<div class="subadd_1">
+						<a href="javascript:">寄送至</a>
+						<input id="subadd_1" type="checkbox">
+						<label for="subadd_1">
+							<span>[菜鸟驿站] 上海 上海市 宝山区 同泰北路164号(电话:021-56161194) （你张大爷 收） 110120119911</span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="buy_order">
+			<h3>确认订单信息</h3>
+			<ul class="order_tip">
+				<li class="tip_baby">店铺宝贝</li>
+				<li class="tip_price">单价（元）</li>
+				<li class="tip_num">数量</li>
+				<li class="tip_you">优惠方式（元）</li>
+				<li class="tip_sum">小计（元）</li>
+			</ul>
+			<div class="order_item">
+			<div class="pay_to_pay">
+				<div class="order_user">
+					<div>
+						<span>店铺:
+							<a href="javascipt:">TaoBao</a><em class="taoFont"><img src="../img/pay/taobao.png" alt=""></em>
+						</span>
+						<span>卖家:
+							<a href="javascipt:" class="pay_cookie_id">XXXX</a><em class="wangwang"></em>
+						</span>
+					</div>
+				</div>
+				<ul class="order_main">
+					<li class="oM_main">
+						<a href="javascript:">
+						    <span class="item_pic">
+						        <span>
+						            <img src="" class="pay_cookie_img">
+						        </span>
+						    </span>
+						    <span class="item_Info pay_cookie_title">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+						</a>
+						<div class="oM_Info">
+							<span>颜色分类:深兰色</span>
+							<span>长度:10m</span>
+						</div>
+						<div class="oM_icon">
+							<a href="javascipt;"><img src="../img/pay/7day.jpg"></a>
+							<a href="javascipt;"><img src="../img/pay/baozhang.png"></a>
+						</div>
+						<div class="oM_sku">发货时间：卖家承诺24小时内发货</div>
+					</li>
+					<li class="oM_price">
+						<p class="pay_cookie_price">0.00</p>
+					</li>
+					<li class="oM_num">
+						<p class="pay_cookie_num">1</p>
+					</li>
+					<li class="oM_you">
+						<p>无优惠</p>
+					</li>
+					<li class="oM_sum">
+						<p class="pay_cookie_count">0.00</p>
+					</li>
+				</ul>
+				<div class="order_table">
+					<table>
+						<tr>
+							<td rowspan=3 class="table_left">
+								<div class="memo"><label>给卖家留言：</label>
+									<textarea class="memo-input" placeholder="选填：对本次交易的说明（建议填写已经和卖家达成一致的说明）"></textarea>
+								</div>
+							</td>
+							<td class="table_right">
+								<div class="ems_price">
+									<span class="pay_ems_price">6.50</span>
+								</div>
+								<div class="ems_title">运送方式：</div>
+								<div class="ems_sel">
+									<input type="radio" checked="checked">
+									<span>普通配送</span>
+									<select class="sel_sel">
+				    		 			<option>快递 6.50元</option>	
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="promise_title">发货时间：</div>
+								<div class="promise_content">卖家承诺订单在买家付款后, 24小时内<a href="javascript:">发货</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="promise_title">运费险：</div>
+								<div class="service_content">
+								    <p class="service_check">
+								        <span class="pay_service">0.40</span>
+								        <input type="checkbox">
+								        <label>投保退货运费险，确认收货前退货可赔付6元</label>
+								        <a href="javascript:">[?]</a>
+								    </p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="order_sum">
+					<p>店铺合计(含运费)：
+						<span><span>¥</span><em class="order_sum_price">14.50</em>
+						</span>
+					</p>
+				</div>
+			</div>
 			</div>
 		</div>
 	</div>
-<!--head over-->
+	<div class="buy_footer">
+		<div class="buy_footer_box">
+			<div class="who_pay">
+				<input type="checkbox"><span>找人代付</span><input type="checkbox"><span>匿名购买</span>
+			</div>
+			<div class="admin">
+				<div class="admin_box">
+					<div>
+						<div class="admin_item">
+							<p class="admin_price"><span>实付款：</span><i>¥</i><em class="admin_count_price">0.00</em></p>
+							<p><span>寄送至：</span>上海 上海市 宝山区 同济支路199号</p>
+							<p><span>收货人：</span>Mr.XXX</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot_submit">
+				<span><i class="iconfont">&#xe63b;</i><a href="javascript:">返回购物车</a></span>
+				<a href="javascript:" class="foot_btn">提交订单</a>
+			</div>
+			<div class="foot_tip">
+				<i class="iconfont">&#xe63c;</i>若价格变动，请在提交订单后联系卖家改价，并查看已买到的宝贝
+			</div>
+		</div>
+	</div>
+</div>
+<!-- content over -->
+
+<!-- right fixed -->
+<div class="right_fixed">
+	<a href="javascipt:">意见反馈</a>
+</div>
+
+
+<!--footer start-->
+	<div class="footer" id="footer">
+		<div class="layout"></div>
+	</div>
+<!--footer over-->
 </body>
 </html>

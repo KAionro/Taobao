@@ -2,24 +2,97 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style/layout.css" >
-	<link rel="stylesheet" href="style/index.css" >
-	<script src="js/index.js"></script>
-	<script src="js/layout.js"></script>
-	<script src="js/jquery-1.12.3.js"></script>
+	<title>淘宝网-淘!我喜欢</title>
+	<link rel="stylesheet" href="../css/common/common.css" >
+	<link rel="stylesheet" href="../css/common/base.css">
+	<link rel="stylesheet" href="../css/login.css" >
+	<link rel="stylesheet" href="../css/common/iconfont.css">
+	<script src="../libs/jquery-1.12.3.js"></script>
+	<script src="../libs/jquery.cookie.js"></script>
+	<script src="../js/login.js"></script>
+	<script src="../js/common/common.js"></script>
+
 </head>
-<body>
-<!--head start-->
-	<div class="head">
-		<div class="layout">
-			<div class="head_login">
-				<a href="login.html">亲，请登录</a>
-				<a href="register.html">免费注册</a>
-				<a href="">手机逛淘宝</a>
+<body id="body">
+<!--main start-->
+<div class="main">
+	<div class="logo">
+		<div class="logo_box">
+			<h1><a href="index.html"><img src="../img/common/logo.jpg" alt=""></a></h1>
+			<a href="javascript:"> "登录页面"改进建议</a>
+			<span><img src="../img/regist/advice.png" alt=""></span>
+		</div>
+	</div>
+	<div class="content">
+		<div class="cont_bd">
+			<div class="cont_box">
+				<div class="login">
+					<div class="login_box">
+						<div class="login_hd">
+							<div class="hd_ma">
+								<i class="iconfont">&#xe631;</i>
+								<i class="iconfont computer">&#xe630;</i>
+							</div>
+							<div class="global">
+								<div class="gl_box">
+									<i class="iconfont">&#xe633;</i>
+									扫码登录送淘金币
+								</div>
+							</div>
+						</div>
+					<!-- 登录框登录 -->
+						<div class="login_txt">
+							<div class="error">
+								<i class="iconfont"></i>
+								<p></p>
+							</div>
+							<div class="title">账户登录</div>
+							<form action="">
+								<div class="user">
+									<strong><i class="iconfont">&#xe62d;</i></strong>
+									<input type="text" placeholder="手机号/会员名/邮箱">
+								</div>
+								<div class="pass">
+									<strong><i class="iconfont">&#xe62c;</i></strong>
+									<input type="password" placeholder="">
+								</div>
+								<div class="regist">
+									<a href="javascript:" class="re_left">忘记密码登录</a>
+									<a href="regist.html" class="re_right">免费注册</a>
+								</div>
+								<div class="submit">登录</div>
+								<div class="sina">
+									<a href="javascript:" class="sina_left"><i class="iconfont">&#xe62e;</i>微博登录</a>
+									<a href="javascript:" class="sina_right"><i class="iconfont">&#xe62f;</i>支付宝登录</a>
+								</div>
+							</form>
+						</div>
+					<!-- 二维码登录 -->
+						<div class="login_ma">
+							<div class="title">手机扫码，安全登录</div>
+							<div class="ma_main">
+								<div class="erweima">
+									<div><img src="../img/login/erweima.png" alt=""></div>
+								</div>
+								<div class="ma_bottom">
+									<i class="iconfont">&#xe632;</i>
+									<p>打开<a href="javascript:">手机淘宝</a>|<a href="javascript:">阿里钱盾</a>扫一扫登录</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-<!--head over-->
+</div>
+<!--main over-->
+
+
+<!-- footer start-->
+<div class="footer layout">
+
+</div>
+<!-- footer over -->
 </body>
 </html>

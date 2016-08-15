@@ -2,24 +2,214 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style/layout.css" >
-	<link rel="stylesheet" href="style/index.css" >
-	<script src="js/index.js"></script>
-	<script src="js/layout.js"></script>
-	<script src="js/jquery-1.12.3.js"></script>
+	<title>淘宝-爱逛街|商品列表</title>
+	<link rel="stylesheet" href="../css/common/common.css" >
+	<link rel="stylesheet" href="../css/common/base.css">
+	<link rel="stylesheet" href="../css/goodList.css" >
+	<link rel="stylesheet" href="../css/common/iconfont.css">
+	<script src="../libs/jquery-1.12.3.js"></script>
+	<script src="../libs/jquery.cookie.js"></script>
+	<script src="../js/goodList.js"></script>
+	<script src="../js/common/common.js"></script>
 </head>
 <body>
 <!--head start-->
-	<div class="head">
-		<div class="layout">
-			<div class="head_login">
-				<a href="login.html">亲，请登录</a>
-				<a href="register.html">免费注册</a>
-				<a href="">手机逛淘宝</a>
-			</div>
-		</div>
+	<div class="header">
 	</div>
 <!--head over-->
+
+<!--nav start-->
+<div class="nav">
+	<div class="layout">
+		<div class="nav_box">
+			<a href="index.html">
+				<div>
+					<strong>爱逛街</strong>
+					<em>guang.taobao.com</em>
+				</div>
+			</a>
+			<ul>
+				<li class="li_red"><a href="javascript:">淘宝首页</a></li>
+				<li class="li_blue"><a href="javascript:">服饰街</a></li>
+				<li class="li_red"><a href="javascript:">美妆街</a></li>
+				<li class="li_blue"><a href="javascript:">家居街</a></li>
+				<li class="li_last">
+					<a href="javascript:">下载APP</a>
+					<div>
+						<span ><img src="../img/goodList/erweima.png" alt=""></span>
+						<span>
+							<a href="javascript:" class="li_app"><img src="../img/goodList/appdownload.png" alt=""></a>
+							<a href="javascript:"><img src="../img/goodList/androiddownload.png" alt=""></a>
+						</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--nav over-->
+
+<!-- content start -->
+<div class="content">
+	<div class="cont_top">
+		<div class="banner">
+			<ul>
+				<li><a href="javascript:"><img src="../img/goodList/banner_1.jpg" alt=""></a></li>
+				<!-- <li><a href="javascript:"><img src="../img/goodList/banner_2.jpg" alt=""></a></li> -->
+			</ul>
+		</div>
+		<div class="main layout">
+			<div class="main_tit">
+				<div class="main_tit_box">
+					<a href="" class="now_tit">最新/瀑布流</a>
+					<span>|</span>
+					<a href="javascript:">最热/分页</a>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div class="goods">
+						<div class="main_list_box">
+							<div class="list_img">
+								<a href="goodDetail.html" target="_blank"><img src="" alt=""></a>
+								<div class="heart">
+									<a href="javascript:">
+										<i></i>
+									</a>
+								</div>
+							</div>
+							<div class="list_price">
+								<div class="l_price_l">
+									<em>¥</em>
+									<span>99</span>
+									<s>¥999</s>
+								</div>
+								<div class="l_price_r">
+									<span><i></i><b>12</b></span>
+									<span><i class="list_heart"></i><b>88</b></span>
+								</div>
+							</div>
+							<div class="list_user">
+								<a href="javascript:"><img src="../img/goodList/head_img_1.jpg" alt=""></a>
+								<div><p class="list_admin">ROUNIAN</p><p>抢购进行中</p class="fabule"></div>
+							</div>
+							<div class="list_mess">
+								<i class="iconfont">&#xe639;</i>
+								<div><p></p></div>
+								
+							</div>
+							<div class="list_cart">
+								<div>
+									<a href="javascript:">Lolita</a>
+									<a href="javascript:"></a>
+									<a href="javascript:" class="join_cart">加入购物车</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li></li>
+				<li></li>
+				<li class="list_last_col"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="cont_btn">
+		<em class="em">
+			<a href="javascript:" class="page_next">◀</a>
+			<b class="page">
+				<a href="javascript:" class="btn_now">1</a>
+			</b>
+			<a href="javascript:" class="page_next">▶</a>
+		</em>
+		<strong>
+			<i>跳转到</i>
+			<input type="text">
+			<input type="button" value="GO" class="button page_next">
+		</strong>
+	</div>
+</div>
+<!-- content over -->
+
+
+<!--弹入弹出的底部分 slip start-->
+<div class="slip">
+	<div class="layout">
+		<span><img src="../img/goodList/slip.png" alt=""></span>
+		<a href="javascript:" class="iconfont">&#xe603;</a>
+	</div>
+</div>
+<div class="slip_small">
+	<img src="../img/goodList/slip_small.png" alt="">
+</div>
+<!--弹入弹出的底部分 slip over-->
+
+<!-- subLan start -->
+<div class="subLan">
+	<div class="sub_top"></div>
+	<ul>
+		<li class="zan">
+			<a href="javascript:">
+				<span class="iconfont">&#xe637;</span>
+				<div>
+					值得买
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+		<li class="sub_bor"></li>
+		<li class="shopCar">
+			<a href="shopCar.html" target="_blank">
+				<span class="iconfont">&#xe602;</span>
+				<i>购物车</i>
+				<strong class="cookie_sum">0</strong>
+				<div>
+					我的购物车
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+		<li class="sub_bor"></li>
+		<li class="hostory">
+			<a href="javascript:">
+				<span class="iconfont">&#xe636;</span>
+				<div>
+					我的足迹
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+		<li class="sub_bor"></li>
+		<li clsss="youHui">
+			<a href="javascript:">
+				<span class="iconfont">&#xe638;</span>
+				<div>
+					店铺优惠
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="sub_bot">
+		<li class="return">
+			<a href="javascript:">
+				<span class="iconfont">&#xe635;</span>
+				<div>
+					顶部
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+	</div>
+</div>
+<!-- subLan over -->
+
+
+
+<!--footer start-->
+	<div class="footer" id="footer">
+		<div class="layout"></div>
+	</div>
+<!--footer over-->
 </body>
 </html>

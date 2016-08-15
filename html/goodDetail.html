@@ -2,24 +2,450 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style/layout.css" >
-	<link rel="stylesheet" href="style/index.css" >
-	<script src="js/index.js"></script>
-	<script src="js/layout.js"></script>
-	<script src="js/jquery-1.12.3.js"></script>
+	<title id="title"></title>
+	<link rel="stylesheet" href="../css/common/common.css" >
+	<link rel="stylesheet" href="../css/common/base.css">
+	<link rel="stylesheet" href="../css/goodDetail.css" >
+	<link rel="stylesheet" href="../css/common/iconfont.css">
+	<script src="../libs/jquery-1.12.3.js"></script>
+	<script src="../libs/jquery.cookie.js"></script>
+	<script src="../js/goodDetail.js"></script>
+	<script src="../js/common/common.js"></script>
 </head>
 <body>
-<!--head start-->
-	<div class="head">
-		<div class="layout">
-			<div class="head_login">
-				<a href="login.html">亲，请登录</a>
-				<a href="register.html">免费注册</a>
-				<a href="">手机逛淘宝</a>
+<!-- head start -->
+	<div class="header">
+	</div>
+<!-- head over -->
+
+<!-- search + logo start -->
+<div class="search">
+	<div class="layout">
+		<div class="logo"><a href="index.html"><img src="../img/goodDetail/logo.png" alt=""></a></div>
+		<div class="more_market">
+			<a href="javascript:">更多市场<i class="iconfont">&#xe608;</i></a>
+		</div>
+		<div class="s_search">
+			<div class="s_search_box">
+				<div class="search_right"><a href="javascipt:">搜本店</a></div>
+				<div class="search_left">
+					<div class="search_tao"><a href="javascript:">搜淘宝</a></div>
+					<div class="search_txt"></div>
+				</div>
 			</div>
 		</div>
 	</div>
-<!--head over-->
+</div>
+<!-- serach + logo over -->
+
+<!-- brand 商标 -->
+<div class="brand">
+	<div class="layout">
+		<a href="javascript:"></a>
+	</div>
+</div>
+<!-- brand 商标 -->
+
+<!-- nav start -->
+<div class="nav">
+	<div class="layout">
+		<ul class="nav_box">
+			<li><a href="javascript:">所有分类</a></li>
+			<li><a href="javascript:">首页</a></li>
+			<li><a href="javascript:">周四上新</a></li>
+			<li><a href="javascript:">上衣</a></li>
+			<li><a href="javascript:">外套</a></li>
+			<li><a href="javascript:">时尚套装</a></li>
+			<li><a href="javascript:">没有双休</a></li>
+			<li><a href="javascript:">下装</a></li>
+		</ul>
+	</div>
+</div>
+<!-- nav over-->
+
+<!-- banner start -->
+<div class="banner">
+	<div class="layout">
+		<div>
+			<div class="banner_box">
+				<div class="banner_main">
+					<div class="ba_ma_box">
+						<div class="big">
+							<div class="big_box">
+								<div class="big_img">
+									<span class="big_first"><div id="move"></div><img src="../img/goodDetail/big_1.jpg_.webp" alt=""></span>
+									<span class="absolute"><img src="../img/goodDetail/big_1.jpg_.webp" alt="" id="absolute"></span>
+								</div>
+								<div class="big_nav_box">
+									<ul class="big_nav">
+										<li class="big_li_first">
+											<div><a href="javascript:"><img src="../img/goodDetail/big_1.jpg_.webp" alt=""></a></div>
+										</li>
+										<li>
+											<div><a href="javascript:"><img src="../img/goodDetail/big_2.jpg_.webp" alt=""></a></div>
+										</li>
+										<li>
+											<div><a href="javascript:"><img src="../img/goodDetail/big_3.jpg_.webp" alt=""></a></div>
+										</li>
+										<li>
+											<div><a href="javascript:"><img src="../img/goodDetail/big_4.jpg_.webp" alt=""></a></div>
+										</li>
+										<li>
+											<div><a href="javascript:"><img src="../img/goodDetail/big_5.jpg_.webp" alt=""></a></div>
+										</li>
+										<li>
+											<div><a href="javascript:"><img src="../img/goodDetail/big_1.jpg_.webp" alt=""></a></div>
+										</li>
+									</ul>	
+								<a href="javascript:" class="big_nav_l iconfont">&#xe606;</a>
+								<a href="javascript:" class="big_nav_r iconfont">&#xe605;</a>
+								</div>
+							</div>
+							<div class="big_share">
+								<a href="javascipt:"><i class="iconfont">&#xe604;</i><span>收藏宝贝 (276人气)</span></a>|
+								<a href="javascipt:"><i class="iconfont">&#xe60f;</i><span class="detail_id">分享</span></a>
+							</div>
+						</div>
+				<!-- banner里的主要信息 -->
+						<div class="ba_ma_ma">
+							<div class="ba_ma_ma_box">
+								<div class="ba_title">
+									<h3>私品堂2016夏装新款吊带裙中长款百褶大摆裙宽松背带连衣裙女韩国</h3>
+								</div>
+								<div class="ba_brand">
+									<img src="../img/goodDetail/ifashion.png" alt="">海量新品 潮流穿搭 玩趣互动
+								</div>
+								<div class="ba_price">
+									<div class="price">
+										价格<span>¥<em>118.00</em></span>
+									</div>
+									<div class="hongbao">
+										<img src="../img/goodDetail/hongbao.png" alt=""><span>店铺红包可抵5.00元 领取</span>
+									</div>	
+									<div class="leiji">
+										<div>
+											<a href="javascript:">1990</a>
+											<a href="javascript:">累计评价</a>
+										</div>
+										<div>
+											<a href="javascript:">209090</a>
+											<a href="javascript:">交易成功</a>
+										</div>
+									</div>
+								</div>
+								<div class="peisong">配送
+									<span>广东广州 至 上海宝山区 快递 免运费 卖家承诺72小时内发货</span>
+								</div>
+								<div class="ma">
+									<div>
+										<div class="ba_size">
+											尺码<a href="javascript:">均码</a>
+										</div>
+										<div class="ba_color">
+											颜色分类<a href="javascript:"><img src="../img/goodDetail/big_1.jpg_.webp" alt=""></a>
+										</div>
+										<div class="ba_num">
+											数量<div><span>-</span><input type="text" value="1" disabled><span>+</span></div>
+										</div>
+										<div class="ba_buy">
+											<a href="javascript:" class="ba_buy_now">立即购买</a>
+											<a href="javascript:" class="ba_joinCart"><i class="iconfont">&#xe602;</i>加入购物车</a>
+										</div>
+									</div>
+								</div>
+								<div class="baozhang">
+									<p>承诺<a href="javascript:" class="icon_1"><span></span>7天无理由</a></p>
+									<p>支付<a href="javascript:" class="icon_2"><span></span>快捷支付</a><a href="javascript:" class="icon_3"><span></span>信用卡支付</a><a href="javascript:" class="icon_4"><span></span>余额宝支付</a><a href="javascript:" class="icon_5"><span></span>蚂蚁花呗</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="admin">
+					<div class="admin_box">
+						<a href="javascript:" class="gold"><img src="../img/goodDetail/gold.png" alt=""></a>
+						<div class="five_year">
+							<a href="javascript:"><i></i>5年老店</a>
+						</div>
+						<div class="admin_info">
+							<div>
+								<a href="javascript:" class="ad_title">私品堂 日韩清新 品质舒适</a>
+								<p class="xinyu">信誉：<span></span></p>
+								<p class="zhanggui">掌柜：<span>私品堂 top</span></p>
+								<p class="callme">联系：<span></span></p>
+								<p class="zizhi">资质：<span></span></p>
+							</div>
+							<div class="pingjia">
+								<div>
+								<div>
+									<p><a href="javascript:">描述</a><span>5.0</span></p>
+									<p><a href="javascript:">服务</a><span>5.0</span></p>
+									<p><a href="javascript:">物流</a><span>5.0</span></p>
+								</div>
+								</div>
+								<a href="javascript:">进入店铺</a>
+								<a href="javascript:">收藏店铺</a>
+							</div>
+						</div>
+					</div>
+					<div class="admin_bottom">
+							<p>看了又看<i class="iconfont">&#xe61f;</i></p>
+							<div><a href="javascript:"><img src="../img/goodDetail/big_1.jpg_.webp" alt=""></a><span>¥ 198</span></div>
+							<div><a href="javascript:"><img src="../img/goodDetail/big_1.jpg_.webp" alt=""></a><span>¥ 198</span></div>
+					</div>
+				</div>
+			</div>
+			<!-- 商品购物信息下面的店铺优惠 -->
+			<div class="tad_area">
+				<div class="tad_box">
+					<div class="tad_left">店铺优惠</div>
+					<div class="tad_main">
+						<div class="tad_main_left">
+							<div class="tadMainL_box">
+								满<span>999.99</span>元 包邮（不包括港澳台）
+							</div>
+						</div>
+						<div class="tad_main_right"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 掌柜推荐 -->
+			<div class="bossRe">
+				<div>
+					<div class="bossRe_top">
+						<div class="bossRe_bd"></div>
+						<div class="bossRe_tit">掌柜推荐</div>
+					</div>
+					<div class="bossRe_main">
+						<ul class="bossRe_ma_ma">
+							<li><a href="javascript:"><img src="../img/goodDetail/big_1.jpg_.webp" alt=""></a><p>2016款夏装新品韩国小清新没谁了</p><span><em>¥</em>999</span></li>
+							<li><a href="javascript:"><img src="../img/goodDetail/big_2.jpg_.webp" alt=""></a><p>2016款夏装新品韩国小清新没谁了</p><span><em>¥</em>999</span></li>
+							<li><a href="javascript:"><img src="../img/goodDetail/big_3.jpg_.webp" alt=""></a><p>2016款夏装新品韩国小清新没谁了</p><span><em>¥</em>999</span></li>
+							<li><a href="javascript:"><img src="../img/goodDetail/big_4.jpg_.webp" alt=""></a><p>2016款夏装新品韩国小清新没谁了</p><span><em>¥</em>999</span></li>
+							<li><a href="javascript:"><img src="../img/goodDetail/big_5.jpg_.webp" alt=""></a><p>2016款夏装新品韩国小清新没谁了</p><span><em>¥</em>999</span></li>
+							<li><a href="javascript:"><img src="../img/goodDetail/big_1.jpg_.webp" alt=""></a><p>2016款夏装新品韩国小清新没谁了</p><span><em>¥</em>999</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- banner over -->
+
+<!-- good_main start -->
+<div class="good">
+	<div class="layout">
+		<div>
+			<div class="good_se">
+				<div class="good_se_box">
+					<input type="text" placeholder="搜本店">
+					<a href="javascript:" class="iconfont">&#xe63d;</a>
+				</div>
+			</div>
+				<div class="good_se_nav">
+					<ul>
+						<li class="goood_nav_li good_li_now"><a href="javascript:">宝贝详情</a></li>
+						<li class="goood_nav_li"><a href="javascript:">累计评论</a></li>
+						<li class="goood_nav_li"><a href="javascript:">专享服务</a></li>
+						<li class="good_nav_last"><a href="javascript:">快 速 直 达</a></li>
+						<li class="good_nav_cart"><a href="javascript:"><i class="iconfont">&#xe602;</i>加入购物车</a></li>
+					</ul>
+				</div>
+		</div>
+		<div class="good_item">
+			<div class="good_item_box">
+				<div class="good_item_center">
+					<div class="good_center_top">
+						<div class="attributes">
+						   	<ul class="attributes_list">
+								<li>廓形:&nbsp;A型</li>
+					            <li>货号:&nbsp;C101</li>
+					            <li>风格:&nbsp;通勤</li>
+					            <li>通勤:&nbsp;韩版</li>
+					            <li>组合形式:&nbsp;单件</li>
+					            <li>裙长:&nbsp;中长裙</li>
+					            <li>款式:&nbsp;背带</li>
+					            <li>袖长:&nbsp;无袖</li>
+					            <li>腰型:&nbsp;高腰</li>
+					            <li>衣门襟:&nbsp;套头</li>
+					            <li>裙型:&nbsp;大摆型</li>
+					            <li>图案:&nbsp;纯色</li>
+					            <li>流行元素/工艺:&nbsp;露背 拼接</li>
+					            <li>品牌:&nbsp;Si Pin Tomn/私品堂</li>
+					            <li>成分含量:&nbsp;51%(含)-70%(含)</li>
+					            <li>材质:&nbsp;棉</li>
+					            <li>适用年龄:&nbsp;18-24周岁</li>
+					            <li>年份季节:&nbsp;2016年夏季</li>
+					            <li>颜色分类:&nbsp;灰色 黑色 卡其色</li>
+					            <li>尺码:&nbsp;均码</li>
+					        </ul>
+					    </div>
+					</div>
+					<div>
+						<img src="../img/goodDetail/good_center_top_1.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_2.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_3.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_4.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_5.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_6.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_7.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_8.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_9.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_10.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_11.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_12.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_13.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_14.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_15.jpg" alt="">
+						<img src="../img/goodDetail/good_center_top_1.jpg" alt="">
+					</div>
+					<div class="good_center_middle">
+						<h5>看了该宝贝的人还看了</h5>
+						<div class="good_ceMi_main">
+							<ul>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_1.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_2.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_3.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_4.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+							</ul>
+						</div>
+						<h5>买了该宝贝的人还买了</h5>
+						<div class="good_ceMi_main">
+							<ul>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_5.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_6.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_7.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_8.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+							</ul>
+						</div>
+						<h5>邻家好货</h5>
+						<div class="good_ceMi_main">
+							<ul>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_9.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_10.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_11.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+								<li class="good_ceMi_list"><div class="item"><div class="pic"><a href="javascipt:"><img src="../img/goodDetail/good_center_top_12.jpg"></a></div><div class="desc"><a href="javascript:">2016夏装新款韩国小清新中长款亚麻系带吊带裙子女宽</a></div><p class="tuijian_price"><span class="tuijian_light"><b class="yen">¥</b><b class="price">108.00</b></span><span class="old_price"><b class="yen">&nbsp;¥</b><b class="price">108.00</b></span></p></div></li>
+							</ul>
+						</div>
+					</div>
+					<div class="good_center_bottom">
+					<!-- 开始的位置	 -->
+					<div id="official_remind">
+					    <dl class="tb-security">
+					        <dt>安全提示：</dt>
+					        <dd>
+					          	<p>交易中请勿使用<em class="tb-h">阿里旺旺</em>以外的聊天工具沟通，不要接收<em class="tb-h">可疑文件</em>和不要点击<em class="tb-h">不明来源</em>的链接，支付前核实好域名和支付详情。
+					            淘宝不会以订单有问题，让您提供任何<em class="tb-h">银行卡</em>、<em class="tb-h">密码</em>、<em class="tb-h">手机验证码</em>！遇此情况请终止通话或举报到淘宝网 <a href="#">常见骗术</a></p>
+					            <p>推荐安全软件：
+					                <span><img src="//img.alicdn.com/tps/i4/TB1uLkbGFXXXXXcXVXXAz6UFXXX-16-16.png"><a href="#">阿里钱盾</a> </span>
+					                <span><img src="//img.alicdn.com/tps/i1/TB1XL5ZGFXXXXbDXFXXAz6UFXXX-16-16.png"><a href="#">UC浏览器</a> </span>
+					                <span><img src="//img.alicdn.com/tps/i1/TB17GogHpXXXXXeXpXXWzzUFXXX-16-16.jpg"><a href="#">腾讯电脑管家</a> </span>
+					                <span><img src="//img.alicdn.com/tps/i3/T1a_aeXoNXXXXXXXXX-16-16.png"><a href="#">360网盾</a> </span>
+									<a href="#">安全软件中心</a>
+					            </p>
+					        </dd>
+					    </dl>
+					    <dl class="tb-exemption">
+					        <dt>内容申明：</dt>
+					        <dd>淘宝为第三方交易平台及互联网信息服务提供者，淘宝（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。淘宝提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；淘宝存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向淘宝举报并提供有效线索。</dd>
+					    </dl>
+					</div>
+					<!-- 结束的位置 -->
+					</div>
+				</div>
+				<div class="good_left">
+					<div class="good_left_box">
+						<div class="good_left_bd"></div>
+						<div class="abs gt1"><a href="javascript:"><img src="../img/goodDetail/wangwangout.gif"></a> 婷婷</div>
+						<div class="abs gt2"><a href="javascript:"><img src="../img/goodDetail/wangwangin.gif"></a> 思思</div>
+						<div class="abs gt3"><a href="javascript:"><img src="../img/goodDetail/wangwangin.gif"></a> 敏儿</div>
+						<div class="abs gt4"><a href="javascript:"><img src="../img/goodDetail/wangwangout.gif"></a> 木子</div>
+						<div class="abs gt5"><a href="javascript:"><img src="../img/goodDetail/wangwangin.gif"></a> 秋秋</div>
+						<div class="abs gt6"><a href="javascript:"><img src="../img/goodDetail/wangwangout.gif"></a> 青青</div>
+					</div>
+					<div class="good_left_1">
+						<a href="#">
+							<img src="../img/goodDetail/good_left_1.png" alt="">
+						</a>
+						<a href="#">
+							<img src="../img/goodDetail/good_left_2.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="good_right">
+					<a href="#"><img src="../img/goodDetail/good_right_1.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- good_main over -->
+
+<!-- subLan start -->
+<div class="subLan">
+	<div class="sub_top"></div>
+	<ul>
+		<li class="zan">
+			<a href="javascript:">
+				<span class="iconfont">&#xe637;</span>
+				<div>
+					值得买
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+		<li class="sub_bor"></li>
+		<li class="shopCar">
+			<a href="shopCar.html">
+				<span class="iconfont">&#xe602;</span>
+				<i>购物车</i>
+				<strong class="cookie_sum">0</strong>
+				<div>
+					我的购物车
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+		<li class="sub_bor"></li>
+		<li class="hostory">
+			<a href="javascript:">
+				<span class="iconfont">&#xe636;</span>
+				<div>
+					我的足迹
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+		<li class="sub_bor"></li>
+		<li clsss="youHui">
+			<a href="javascript:">
+				<span class="iconfont">&#xe638;</span>
+				<div>
+					店铺优惠
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="sub_bot">
+		<li class="return">
+			<a href="javascript:">
+				<span class="iconfont">&#xe635;</span>
+				<div>
+					顶部
+					<b>◆</b>
+				</div>
+			</a>
+		</li>
+	</div>
+</div>
+<!-- subLan over -->
+
+<!-- footer start -->
+	<div class="footer" id="footer">
+		<div class="layout"></div>
+	</div>
+<!-- footer over -->
 </body>
 </html>

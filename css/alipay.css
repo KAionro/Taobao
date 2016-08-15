@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.head {height: 50px; background-color: #fff; border-bottom: 1px solid #d7d8d8; box-shadow: 0 1px 1px #ddd; margin-bottom: 1px;}
+.head>div {width: 950px; height: 100%; margin: 0 auto;}
+.logo_box {float: left; padding-top: 10px; padding-right: 15px;}
+.logo {width: 88px; height: 30px; float: left; margin-right: 10px; background:url(../img/alipay/logo.png) no-repeat;}
+.mypay {font: 400 18px/26px "Microsoft YaHei",SimSun; border-left: 1px solid grey; color: #1a1a1a; float: left; padding-left: 10px; margin-top: 2px;}
+.hd_select_box {float:left; width: 120px; padding-top: 15px; display: inline-block; background: #fff; color: #7d7d7d; font-size: 14px; float: left;}
+.hd_select {font-size: 14px; padding: 1px 5px; color: #5b6a6f; text-align: center; background-color: #eff0f1; display: inline-block;}
+.ui_select {position: absolute; z-index: 102; width: 111px; background-color: #f7f7f5; display: none; border: 1px solid #cecdc8; margin-top: -1px;}
+.header_right {float: right; margin-top: 17px; overflow: hidden;}
+.header_right li {padding: 0 10px; margin-right: -1px; float: left; background:url(../img/alipay/line.png) no-repeat right center; }
+.header_right .account_id {background: 0 0;}
+
+/*content*/
+.content {margin: 0 auto 20px; width: 950px; padding-bottom: 1px;}
+.order {overflow: visible; position: relative; z-index: 101;}
+.co_wrapper {min-height: 96px; position: relative; z-index: 10; line-height: 1.8em; border-bottom: 3px solid #b3b3b3; background: #eff0f1; min-height: 86px; padding: 15px 0 11px 116px; padding-bottom:30px;}
+.ma {top: 10px; left: 0; position:absolute; border: 0; width: 100px; height: 100px; background: 0 0;}
+.cookie_title {height: auto; line-height: 25px; width: 600px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-top: 15px;}
+.cookie_id {height: auto; line-height: 25px;}
+.order_amount {top:40px; position: absolute; right: 27px; text-align: right;}
+.order_real_amount {text-align: right;}
+.alipy_price {color: #ff8208; font-weight: 700; font-size: 22px;}
+.pay_page {border-bottom: 3px solid #a6a6a6; padding: 20px; background: #fff; margin-bottom:20px;}
+.pay_page_box {}
+.pay_bank {}
+.pay_bank_list {border-color: #85a1d4; padding: 0; border: 4px solid #cad6ef; position: relative; margin-bottom: 1px;}
+.pay_bank_div {height: 52px; width: 100%; line-height: 52px; cursor: pointer;}
+.pay_amount_price {margin-right: 17px; margin-left: 5px; min-width: 150px; text-align: right; padding: 10px 0; height: 32px; line-height: 32px; float:right;}
+.cookie_price {margin-right: 3px; margin-left: 3px; vertical-align: bottom; font-size: 16px; color: #ff8208; font-weight: 700;}
+.bank_tit { width: 135px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-right: 15px; float:left;}
+.bank_pro {min-width: 88px; float: left;}
+.pay_bank_div input {float:left; margin-left:20px; margin-right:20px; margin-top:21px;}
+.manage {padding: 10px 0; overflow:hidden;}
+.other_bank { text-align: center; padding-left: 0; padding-right: 0;margin-right: 10px; height: 33px; line-height: 33px; border: 1px solid #ccc; text-decoration: none; min-width: 135px; color: #0ae; float: left;}
+.add_bank {text-align: center; padding-left: 0; padding-right: 0; margin-right: 10px; height: 33px; line-height: 33px; color: #0ae; float: left; text-decoration: none; min-width: 135px;}
+.submit {height: 32px; border: 1px solid #0ae; background-color: #0ae; display: inline-block; text-align: center; font-size: 14px; font-weight: 700; border-radius: 2px; padding: 0 20px; overflow:hidden; line-height:32px;}
+.submit a {color:#fff;}
+.foot {padding: 10px; text-align: center;}
+.copyright {text-align: center; margin-bottom:10px;}
+.server {text-align: center; color: #747474; margin-bottom:10px;}
+.partner {text-align: center;}
